@@ -10,7 +10,7 @@ const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
 })
-const { Telnet } = require('telnet-client');
+
 const cliProgress = require('cli-progress');
 const bar1 = new cliProgress.SingleBar({}, cliProgress.Presets.shades_classic);
 const app_path = (process.pkg) ? process.cwd() : __dirname;
@@ -24,6 +24,11 @@ const libsPath = isWindows() ? 'libs\\ivms-win.exe' : 'libs/ivms-linux'
 // const spawn = require('child_process').spawn;
 
 var question = "Vui lòng nhập tên file json chứa thông tin các luồng input (ví dụ: test.json). Gõ `q` để thoát : "
+function promise_wait(ms) {
+    return new Promise(function(resolve, reject) { 
+      setTimeout(resolve, ms, 'PROMISE_TIMED_OUT');
+    });
+  }
 async function main() {    
     try {
         let inputData = await readlineInput();
@@ -32,16 +37,15 @@ async function main() {
             //Write result to output file
             bar1.start(res.stream_list.length, 0);
             for (let i = 0; i < res.stream_list.length; ++i) {
-                try {
-                    //telnet first to see host is reachable
-                    let url = new URL(res.stream_list[i]);
-                    await connection.connect({
-                        host:url.host,
-                        port:url.port
-                    })
-                    let ff = await ffprobe(res.stream_list[i], { path: path.join(app_path, libsPath)});
-                    ff["input"]=res.stream_list[i];
-                    ffprobe_results.results.push(ff);
+                try {               
+                    let ff = await Promise.race([ffprobe(res.stream_list[i], { path: path.join(app_path, libsPath)}), promise_wait(5000)])
+                    if(ff != 'PROMISE_TIMED_OUT')
+                    {
+                        ff["input"]=res.stream_list[i];
+                        ffprobe_results.results.push(ff);
+                    }
+                    else
+                    throw false;                   
                 } catch (error) {
                     ffprobe_results.results.push({
                         "streams":null,
