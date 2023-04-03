@@ -1,0 +1,9 @@
+{
+    "stream_list" :[
+        "rtsp://10.159.12.183:8554/khoichay03.ts",
+        "rtsp://10.159.12.183:8554/tainan01.ts",
+        "rtsp://10.159.12.183:8554/vungcam03.ts",
+        "rtsp://10.159.12.183:8554/deadinput.ts",
+        "rtsp://admin:Vnpt@123@192.168.0.65:554/ch1/main/av_stream"
+    ]
+}

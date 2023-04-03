@@ -1,0 +1,200 @@
+{
+  "results": [
+    {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "mpeg2video",
+          "codec_long_name": "MPEG-2 video",
+          "profile": "Main",
+          "codec_type": "video",
+          "codec_time_base": "1001/30000",
+          "codec_tag_string": "[2][0][0][0]",
+          "codec_tag": "0x0002",
+          "width": 1280,
+          "height": 720,
+          "coded_width": 0,
+          "coded_height": 0,
+          "has_b_frames": 1,
+          "sample_aspect_ratio": "1:1",
+          "display_aspect_ratio": "16:9",
+          "pix_fmt": "yuv420p",
+          "level": 6,
+          "color_range": "tv",
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "refs": 1,
+          "r_frame_rate": "30000/1001",
+          "avg_frame_rate": "30000/1001",
+          "time_base": "1/90000",
+          "start_pts": 132006,
+          "start_time": "1.466733",
+          "disposition": {
+            "default": 0,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          }
+        }
+      ],
+      "input": "rtsp://10.159.12.183:8554/khoichay03.ts"
+    },
+    {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "mpeg2video",
+          "codec_long_name": "MPEG-2 video",
+          "profile": "Main",
+          "codec_type": "video",
+          "codec_time_base": "1/25",
+          "codec_tag_string": "[2][0][0][0]",
+          "codec_tag": "0x0002",
+          "width": 1280,
+          "height": 720,
+          "coded_width": 0,
+          "coded_height": 0,
+          "has_b_frames": 1,
+          "sample_aspect_ratio": "1:1",
+          "display_aspect_ratio": "16:9",
+          "pix_fmt": "yuv420p",
+          "level": 6,
+          "color_range": "tv",
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "refs": 1,
+          "r_frame_rate": "25/1",
+          "avg_frame_rate": "25/1",
+          "time_base": "1/90000",
+          "start_pts": 133200,
+          "start_time": "1.480000",
+          "disposition": {
+            "default": 0,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          }
+        }
+      ],
+      "input": "rtsp://10.159.12.183:8554/tainan01.ts"
+    },
+    {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "mpeg2video",
+          "codec_long_name": "MPEG-2 video",
+          "profile": "Main",
+          "codec_type": "video",
+          "codec_time_base": "1/30",
+          "codec_tag_string": "[2][0][0][0]",
+          "codec_tag": "0x0002",
+          "width": 1280,
+          "height": 720,
+          "coded_width": 0,
+          "coded_height": 0,
+          "has_b_frames": 1,
+          "sample_aspect_ratio": "1:1",
+          "display_aspect_ratio": "16:9",
+          "pix_fmt": "yuv420p",
+          "level": 6,
+          "color_range": "tv",
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "refs": 1,
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "time_base": "1/90000",
+          "start_pts": 132000,
+          "start_time": "1.466667",
+          "disposition": {
+            "default": 0,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          }
+        }
+      ],
+      "input": "rtsp://10.159.12.183:8554/vungcam03.ts"
+    },
+    {
+      "streams": null,
+      "input": "rtsp://10.159.12.183:8554/deadinput.ts"
+    },
+    {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "Baseline",
+          "codec_type": "video",
+          "codec_time_base": "1/50",
+          "codec_tag_string": "[0][0][0][0]",
+          "codec_tag": "0x0000",
+          "width": 1920,
+          "height": 1080,
+          "coded_width": 1920,
+          "coded_height": 1088,
+          "has_b_frames": 0,
+          "pix_fmt": "yuvj420p",
+          "level": 42,
+          "color_range": "pc",
+          "color_space": "bt709",
+          "color_transfer": "bt709",
+          "color_primaries": "bt709",
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "refs": 1,
+          "is_avc": "false",
+          "nal_length_size": "0",
+          "r_frame_rate": "25/1",
+          "avg_frame_rate": "25/1",
+          "time_base": "1/90000",
+          "start_pts": 21600,
+          "start_time": "0.240000",
+          "bits_per_raw_sample": "8",
+          "disposition": {
+            "default": 0,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          }
+        }
+      ],
+      "input": "rtsp://admin:Vnpt@123@192.168.0.65:554/ch1/main/av_stream"
+    }
+  ]
+}
